@@ -1,0 +1,25 @@
+{
+    "name": "horizon-worlds",
+    "displayName": "Horizon Worlds",
+    "description": "This extension aims to create a highlighted color foundation for in-game syntax.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "hw",
+            "aliases": ["Horizon Worlds", "hw"],
+            "extensions": [".hw"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "hw",
+            "scopeName": "source.hw",
+            "path": "./syntaxes/hw.tmLanguage.json"
+        }]
+    }
+}
